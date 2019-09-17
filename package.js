@@ -1,7 +1,7 @@
 Package.describe({
-  name: 'abernix:minifier-js',
+  name: 'd3k4y:minifier-js',
   summary: "JavaScript minifier",
-  version: "2.1.0"
+  version: "2.1.1"
 });
 
 Npm.depends({
@@ -10,7 +10,7 @@ Npm.depends({
 });
 
 Package.onUse(function (api) {
-  api.use('babel-compiler@6.19.2');
+  api.use('babel-compiler@7.3.4');
   api.export(['meteorJsMinify']);
   api.addFiles(['minifier.js'], 'server');
 });
